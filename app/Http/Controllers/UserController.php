@@ -43,7 +43,8 @@ class UserController extends Controller
         // dd($users);
 
         // if ($users->company->isEmpty()) {
-        //    dd('HOLA');
+
+        //    dd($users->company, 'HOLA');
         // }
 
 

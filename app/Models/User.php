@@ -8,7 +8,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Model;
 // use App\Models\City;
-use App\Models\Phone;
+// use App\Models\Phone;
 // use App\Models\Post;
 // use App\Models\Company;
 // use App\Models\Profile;

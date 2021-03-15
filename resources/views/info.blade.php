@@ -49,10 +49,15 @@
 
                                 <p class="card-text"><b>Email: </b> {{ $users->email }} </p>
                                 <p><b>Skills: </b>
-                                <span class="badge bg-primary">WordPress</span>
-                                <span class="badge bg-info">Weebly</span>
-                                <span class="badge bg-warning">Bootstrap</span>
-                                <span class="badge bg-success">Wix</span>
+                                @if ( $users->company->isEmpty() )
+                                    N/A
+                                @else
+                                   @foreach ( $users->profile as $profile )
+                                        <span class="badge bg-success">{{ $profile->profile }}</span>
+
+                                       {{-- <span class="badge bg-info">{{ $company->company }}</span> --}}
+                                   @endforeach
+                                 @endif
                                 </p>
 
                             </div>
